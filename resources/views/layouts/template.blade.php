@@ -462,6 +462,13 @@
                                     <p>01168372742</p>
                                 </a>
                             </div>
+                            
+                            <div class="phone">
+                                <a target="_blank" href="https://www.linkedin.com/in/yamila-morales/"> <i class="bi bi-linkedin"></i>
+                                    <h4>Linkedin</h4>
+                                    <p>www.linkedin.com/in/yamila-morales/</p>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
