@@ -16,8 +16,14 @@ class ProyectoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
+
         $proyectos = Proyecto::paginate();
 
         return view('proyecto.index', compact('proyectos'))
@@ -44,11 +50,16 @@ class ProyectoController extends Controller
     public function store(Request $request)
     {
         request()->validate(Proyecto::$rules);
-
+  
         $proyecto = Proyecto::create($request->all());
-
+        $proyecto = request()->except('_token');
+       if ($request->hasFile('imagen')){
+            $proyecto['imagen']=$request->file('imagen')->store('uploads', 'public');
+        }
+       
+        Proyecto::insert($proyecto);
         return redirect()->route('proyectos.index')
-            ->with('success', 'Proyecto created successfully.');
+            ->with('success', 'Proyecto creado con éxito.');
     }
 
     /**
@@ -60,6 +71,7 @@ class ProyectoController extends Controller
     public function show($id)
     {
         $proyecto = Proyecto::find($id);
+
 
         return view('proyecto.show', compact('proyecto'));
     }
@@ -89,9 +101,11 @@ class ProyectoController extends Controller
         request()->validate(Proyecto::$rules);
 
         $proyecto->update($request->all());
+        
+        
 
         return redirect()->route('proyectos.index')
-            ->with('success', 'Proyecto updated successfully');
+            ->with('success', 'Proyecto actualizado con éxito');
     }
 
     /**
@@ -104,6 +118,7 @@ class ProyectoController extends Controller
         $proyecto = Proyecto::find($id)->delete();
 
         return redirect()->route('proyectos.index')
-            ->with('success', 'Proyecto deleted successfully');
+            ->with('success', 'Proyecto eliminado con éxito');
     }
 }
+?>
