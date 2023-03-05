@@ -657,7 +657,7 @@ color: white;
   right: 0;
   bottom: -60px;
   z-index: 3;
-  position: absolute;
+  position:absolute;
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;

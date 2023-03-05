@@ -336,12 +336,13 @@
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
                     @foreach ($proyectos as $proyecto)
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app " >
                         <div class="portfolio-wrap">
-                            <img src="/public/img/sistema.png" class="thumbnail" height="50px;" alt="">
+                        <h2 class="p-3 d-block"> {{$proyecto->nombre}}</h2>
+                    <p class="p-3 d-block">{{$proyecto->descripcion}}.</p>
+                            <img src="assets/img/sistema.png" class=" img-fluid" height= "500px;" width="" alt="ABM Clientes">
                             <div class="portfolio-links">
-                                <a href="  {{ $proyecto->imagen }}" data-gallery="portfolioGallery" class="portfolio-lightbox " title=" {{ $proyecto->descripcion }}"><i class="bx bx-plus"></i></a>
-                                <a href="  {{ $proyecto->url }}" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="  {{ $proyecto->url }}" data-gallery="portfolioGallery" class="portfolio-lightbox"  title="Ver codigo fuente"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>

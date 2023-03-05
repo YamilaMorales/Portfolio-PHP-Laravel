@@ -84,8 +84,12 @@ class ProyectoController extends Controller
      */
     public function edit($id)
     {
-        $proyecto = Proyecto::find($id);
 
+     
+        $proyecto = Proyecto::find($id);
+      
+       
+        
         return view('proyecto.edit', compact('proyecto'));
     }
 
@@ -121,4 +125,3 @@ class ProyectoController extends Controller
             ->with('success', 'Proyecto eliminado con éxito');
     }
 }
-?>
