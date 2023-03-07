@@ -15,9 +15,9 @@ use App\Http\Controllers\ImageUploadController;
 */
 
 
-
 Route::get('upload-image', [ ImageUploadController::class, 'index' ]);
 Route::post('upload-image', [ ImageUploadController::class, 'store' ])->name('image.store');
+
 Route::get('/', [App\Http\Controllers\PortfolioController::class, 'index']);
 
 Auth::routes();
@@ -27,6 +27,6 @@ Route::resource('/proyectos',App\Http\Controllers\ProyectoController::class );
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get( '/contacto', [ ContactoController::class, 'index' ])->name(name:"contacto.index");
+    Route::post('/contacto', [ ContactoController::class, 'send' ])->name(name:"contacto.send");

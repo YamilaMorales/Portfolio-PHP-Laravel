@@ -25,7 +25,7 @@ class ProyectoController extends Controller
     {
 
         $proyectos = Proyecto::paginate();
-
+        $proyecto['proyectos']=Proyecto::paginate(3);
         return view('proyecto.index', compact('proyectos'))
             ->with('i', (request()->input('page', 1) - 1) * $proyectos->perPage());
     }
@@ -54,7 +54,7 @@ class ProyectoController extends Controller
         $proyecto = Proyecto::create($request->all());
         $proyecto = request()->except('_token');
        if ($request->hasFile('imagen')){
-            $proyecto['imagen']=$request->file('imagen')->store('uploads', 'public');
+            $proyecto['imagen']=$request->file('imagen')->store('img', 'public');
         }
        
         Proyecto::insert($proyecto);

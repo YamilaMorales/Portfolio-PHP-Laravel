@@ -104,7 +104,7 @@
                         <img src="assets/img/Avatar2.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 pt-lg-0 content " data-aos="fade-left">
-                        <h3 class="p-5">Web Developer.</h3>
+                        <h3 class="p-5">Web Developer Full Stack.</h3>
                         <p class="fst-italic">
 
                         </p>
@@ -253,7 +253,12 @@
                             <p><em>DePC Suite Buenos Aires, Argentina</em></p>
                             <p>Bootcamp </p>
                         </div>
-
+                        <div class="resume-item">
+                            <h4>Inglés</h4>
+                            <h5>marzo 22 - al presente</h5>
+                            <p><em>Liceo Cultural Británico Buenos Aires, Argentina</em></p>
+                            <p></p>
+                        </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <h3 class="resume-title">Experiencia Profesional</h3>
@@ -311,50 +316,9 @@
                 </div>
             </div>
         </section>
-
+        @yield('content')
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Proyectos</h2>
-                    <p>Aquí encontrarás todos mis proyectos realizados.</p>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-                    @foreach ($proyectos as $proyecto)
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app " >
-                        <div class="portfolio-wrap">
-                        <h2 class="p-3 d-block"> {{$proyecto->nombre}}</h2>
-                    <p class="p-3 d-block">{{$proyecto->descripcion}}.</p>
-                            <img src="assets/img/sistema.png" class=" img-fluid" height= "500px;" width="" alt="ABM Clientes">
-                            <div class="portfolio-links">
-                                <a href="  {{ $proyecto->url }}" data-gallery="portfolioGallery" class="portfolio-lightbox"  title="Ver codigo fuente"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    @endforeach
-
-                </div>
-               
-
-            </div>
-        </section><!-- End Portfolio Section -->
-
+       
 
 
         <!-- ======= Contact Section ======= -->
@@ -402,6 +366,7 @@
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
+                                
                                 <div class="form-group col-md-6">
                                     <label for="name">Nombre </label>
                                     <input type="text" name="name" class="form-control" id="name" required>
