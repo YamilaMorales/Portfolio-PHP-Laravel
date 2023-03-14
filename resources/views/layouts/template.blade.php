@@ -55,7 +55,7 @@
                 <h1 class="text-light"><a href="index.html">Yamila Morales</a></h1>
                 <div class="social-links mt-3 text-center">
 
-                    <a target=" _blank" href="mail.to:moralesyn@hotmail.com" class="mail"><i class="bi bi-envelope-at"></i></a>
+                    <a target=" _blank" href="mailto:moralesyn@hotmail.com" class="mail"><i class="bi bi-envelope-at"></i></a>
                     <a target=" _blank" href="http?//api.whatsapp.com/send?phone1168372742" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
                     <a target=" _blank" href="https://github.com/YamilaMorales" class=" github"><i class="bx bxl-github"></i></a>
                     <a target=" _blank" href="https://www.linkedin.com/in/yamila-morales/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -70,7 +70,7 @@
                     <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Proyectos</span></a></li>
                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
 
-                    <li><a class="btn d-flex"> <i class="fa-solid fa-download"></i>Descargar mi CV</a></li>
+                    <li><a href="cv/CV-YAMILA-MORALES-FullStackDeveloper.pdf" download="CV-YAMILA-MORALES-FullStackDeveloper.pdf" class="btn d-flex"> <i class="fa-solid fa-download"></i>Descargar mi CV</a></li>
 
                 </ul>
             </nav><!-- .nav-menu -->
