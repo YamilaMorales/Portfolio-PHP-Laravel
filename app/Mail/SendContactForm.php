@@ -65,7 +65,7 @@ class SendContactForm extends Mailable
 
        return $this
        ->subject (subject:"Formulario de contacto- " .config(key:"app.name"))
-       ->markdown(view:"mails.contacto");
+       ->markdown(view:"email.contacto");
 
      }
 

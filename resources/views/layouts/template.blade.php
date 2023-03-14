@@ -81,8 +81,9 @@
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 
         <div class="hero-container" data-aos="fade-in">
-            <h1>Yamila Morales</h1>
-            <p>I'm <span class="typed" data-typed-items="Developer Web Full Stack"></span></p>
+            <h1> <em>Yamila Morales</em></h1>
+            <p  class=""> <em>   Desarrolladora Web Full Stack </em></p>
+            <P><span class="typed" data-typed-items= "Bienvenid@ a mi sitio web"></span></P>
         </div>
 
     </section><!-- End Hero -->
@@ -260,21 +261,7 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Experiencia Profesional</h3>
-                        <div class="resume-item">
-                            <h4>Senior graphic design specialist</h4>
-                            <h5>2019 - Present</h5>
-                            <p><em>Experion, New York, NY </em></p>
-                            <ul>
-                                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                            </ul>
-                        </div>
-
-                    </div>
+                   
                 </div>
 
             </div>
@@ -332,7 +319,7 @@
 
                 <div class="row" data-aos="fade-in">
 
-                    <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="col-lg-8 d-flex align-items-stretch">
                         <div class="info">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
@@ -341,9 +328,11 @@
                             </div>
 
                             <div class="email">
-                                <i class="bi bi-envelope"></i>
+                               <a href="mailto:moralesyn@hotmail.com"> <i class="bi bi-envelope"></i>
+
                                 <h4>Email:</h4>
                                 <p>moralesyn@hotmail.com</p>
+                                </a>
                             </div>
 
                             <div class="phone">
@@ -363,38 +352,7 @@
 
                     </div>
 
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                
-                                <div class="form-group col-md-6">
-                                    <label for="name">Nombre </label>
-                                    <input type="text" name="name" class="form-control" id="name" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name"> Email</label>
-                                    <input type="email" class="form-control" name="email" id="email" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Asunto</label>
-                                <input type="text" class="form-control" name="subject" id="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Mensaje</label>
-                                <textarea class="form-control" name="message" rows="10" required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Gracias por contactarte, te estare respondiendo a la brevedad.</div>
-                            </div>
-                            <div class="text-center"><button type="submit">ENVIAR</button></div>
-                        </form>
-                    </div>
-
-                </div>
-
+                    
             </div>
         </section><!-- End Contact Section -->
 

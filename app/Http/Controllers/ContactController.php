@@ -6,7 +6,7 @@ use App\Mail\SendContactForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use https\App\Controller\User;
-class HomeController extends Controller
+class ContactController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth:api');
     }
 
     /**
@@ -44,5 +44,7 @@ class HomeController extends Controller
                 $request->input(key:"message"),
             )
             );
+            return view('welcome');
     }
 }
+?>
