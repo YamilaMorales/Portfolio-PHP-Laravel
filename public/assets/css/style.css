@@ -597,8 +597,9 @@ color: white;
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  
+
 }
+
 
 .portfolio #portfolio-flters {
   padding: 0;
@@ -632,12 +633,17 @@ color: white;
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.portfolio .portfolio-wrap  {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
+.img{
+  height: 250px;
+  width: 400px;
+}
+
 
 .portfolio .portfolio-wrap::before {
   content: "";

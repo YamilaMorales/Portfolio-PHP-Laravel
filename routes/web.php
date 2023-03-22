@@ -44,3 +44,6 @@ Route::post('register','APIAuthController@register');
 Route::group(['middleware' => 'auth:member-api'], function(){
   Route::post('user', 'APIAuthController@details');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

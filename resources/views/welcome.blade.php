@@ -12,26 +12,16 @@
             <p>Aquí encontrarás todos mis proyectos realizados.</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
+      
 
-            <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-web">Web</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row portfolio-container " data-aos="fade-up" data-aos-delay="100">
+        <div class="row portfolio-container " data-aos="fade-up" data-aos-delay="100" >
 
             @foreach ($proyectos as $proyecto)
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app box " style="height:400PX;">
-                <div class="portfolio-wrap ">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app box " >
+                <div class="portfolio-wrap" style="height: 450px;">
                     <h5 class="p-3 d-block  text-center"> {{$proyecto->nombre}}</h5>
 
-                    <img src="{{ asset('storage').'/'.$proyecto->imagen }}" class=" img-fluid" height="600px;" width="" alt="">
+                    <img src="{{ asset('storage').'/'.$proyecto->imagen }}" class="img-fluid img img-thumbnail" alt="">
                     <p class="p-3 d-block ">{{$proyecto->descripcion}}</p>
                     <div class="portfolio-links">
                         
